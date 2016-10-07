@@ -1,0 +1,46 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Ford",
+      "model": "Escape",
+      "year": "2008",
+      "price": "15999",
+      "description": "This is an immaculate 2008 Ford Escapre with only 45000 miles on it. Single owner, no wrecks!"
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": "2013",
+      "price": "9999",
+      "description": "This is an immaculate 2013 Toyota Yaris with only 75000 miles on it. Stunning interior, power everything."
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": "2013",
+      "price": "9999",
+      "description": "This is an immaculate 2013 Toyota Yaris with only 75000 miles on it. Stunning interior, power everything."
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": "2013",
+      "price": "9999",
+      "description": "This is an immaculate 2013 Toyota Yaris with only 75000 miles on it. Stunning interior, power everything."
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": "2013",
+      "price": "9999",
+      "description": "This is an immaculate 2013 Toyota Yaris with only 75000 miles on it. Stunning interior, power everything."
+    }
+  ]
+}
