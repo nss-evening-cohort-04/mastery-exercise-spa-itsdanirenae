@@ -2,6 +2,7 @@ function populatePage (inventory) {
 var container = document.getElementById("container");
 var counter = 0;
 var carInfoOutput = "";
+var currentSelection = "";
 
   for (var i = 0; i < inventory.cars.length; i++) {
      var car = inventory.cars[i];
@@ -18,6 +19,7 @@ var carInfoOutput = "";
     }
 container.innerHTML = carInfoOutput;
 
+CarLot.activateEvents();
 };
 
 
