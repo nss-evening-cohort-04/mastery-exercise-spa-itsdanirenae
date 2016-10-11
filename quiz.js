@@ -7,10 +7,10 @@ var currentSelection = "";
   for (var i = 0; i < inventory.cars.length; i++) {
      var car = inventory.cars[i];
      carInfoOutput += "<div id='container'>"
-       carInfoOutput += "<div class='col-md-4'>";
-       carInfoOutput += "<div class='border'>"
+       carInfoOutput += "<div class='col-md-4 car_card border'>";
+       carInfoOutput += "<div>"
        carInfoOutput += "<div>" + car.year + " " + car.make + " " + car.model + "</div>";
-       carInfoOutput += "<div>" + car.description + "</div>";
+       carInfoOutput += "<div id='description' class='description'>" + car.description + "</div>";
        carInfoOutput += "<div>" + car.price + "</div>";
        carInfoOutput += "</div>";
        carInfoOutput += "</div>";
@@ -26,3 +26,4 @@ CarLot.activateEvents();
 CarLot.loadInventory();
 
 
+//console log event.target. ........ down to the div I need
