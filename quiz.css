@@ -17,4 +17,5 @@ body {
   height: 150px;
   max-height: 225px;
   background-color: lightblue;
+  word-wrap: break-word;
 }

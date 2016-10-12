@@ -25,5 +25,3 @@ CarLot.activateEvents();
 
 CarLot.loadInventory();
 
-
-//console log event.target. ........ down to the div I need

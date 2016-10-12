@@ -7,6 +7,7 @@ var CarLot = (function(oldIife){
       oldIife.activateEvents = function (){
         for (var i = 0; i < containerActivate.length; i++) {
             containerActivate[i].addEventListener("click", function(e){
+              console.log(e);
               for (var j = 0; j < containerActivate.length; j++) {
                 containerActivate[j].classList.remove("on-click");
               }
@@ -18,15 +19,9 @@ var CarLot = (function(oldIife){
 
          userInput.addEventListener('keyup', function(go) {
           if (currentSelection) {
-            var get = currentSelection.querySelector('.description').innerHTML
-            // var get = document.getElementById('description').innerHTML;
-            console.log("yo")
-            // get = event.currentTarget;
-         // currentSelection.querySelector('.description').innerHTML = this.value;
-            get = event.target;
-          // currentSelection = this.value;
-        // currentSelection = event.currentTarget;
-        // console.log(oldIife)
+            currentSelection.querySelector('.description').innerHTML = this.value;
+            get = event.currentTarget.children;
+
         }
     });
   }
