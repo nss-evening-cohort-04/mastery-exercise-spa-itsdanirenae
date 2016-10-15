@@ -1,8 +1,9 @@
 
 var CarLot = (function(oldIife){
     var currentSelection = "";
-      var containerActivate = document.getElementsByClassName("car_card");
-        var userInput = document.getElementById("input");
+    var containerActivate = document.getElementsByClassName("car_card");
+    var userInput = document.getElementById("input");
+    var currentDiv; /// william showed me this
 
       oldIife.activateEvents = function (){
         for (var i = 0; i < containerActivate.length; i++) {
@@ -15,12 +16,13 @@ var CarLot = (function(oldIife){
               currentSelection = e.target;
               userInput.focus();
             });
-
+            console.log(currentSelection)
 
          userInput.addEventListener('keyup', function(go) {
           if (currentSelection) {
-            currentSelection.querySelector('.description').innerHTML = this.value;
-            get = event.currentTarget.children;
+            var get = document.getElementById('description').innerHTML
+            // currentSelection.querySelector('.description').innerHTML = this.value;
+            get = go.currentTarget.children;
 
         }
     });
@@ -40,32 +42,13 @@ function clearInput (e){
 
 })(CarLot || {});
 
+// the click event should set the current div to whatever you click - can get access to description here
+// you an set that to the currentDiv or something like this
+//- notes from Will
+//keyup event should edit that currentDiv description
 
 
-// var CarLot = (function (events) {
-//   var carContainer = document.getElementsByClassName("border-this");
-//   var userInput = document.getElementById("userInput");
 
 
-//     events.activateEvents = function() {
-//       for (var i = 0; i < carContainer.length; i++) {
-//         carContainer[i].addEventListener("click", function(event) {
-//           for (var x = 0; x < carContainer.length; x++) {
-//             carContainer[x].classList.remove('selected');
-//           }
-//             event.currentTarget.classList.add('selected');
-//             selectedDescription = event.currentTarget;
-//             userInput.focus();
-//             userInput.value = null;
-//           });
-//         };
-//         userInput.addEventListener('keyup', function(e) {
-//           if (selectedDescription) {
-//           selectedDescription.querySelector('.description').innerHTML = this.value;
-//         }
-//     });
-//   }
-//     return events
-// })(CarLot || {});
 
 
