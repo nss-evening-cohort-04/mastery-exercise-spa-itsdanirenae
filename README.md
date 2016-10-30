@@ -1,4 +1,4 @@
-# Single Page Applications Quiz
+# CarLot - Single Page Applications Master Exercise
 
 ## Description
 

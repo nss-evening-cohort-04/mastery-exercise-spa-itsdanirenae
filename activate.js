@@ -15,14 +15,12 @@ var CarLot = (function(oldIife){
               }
               e.currentTarget.classList.add("on-click");
               currentSelection = e.currentTarget;
-              console.log(currentSelection);
               userInput.focus();
             });
 
          userInput.addEventListener('keyup', function(go) {
           if (currentSelection) {
             var get = document.getElementById('description').innerHTML
-            console.log(get);
             currentSelection.querySelector('.description').innerHTML = this.value;
         }
     });
@@ -35,7 +33,6 @@ var CarLot = (function(oldIife){
       e.preventDefault();
       if(e.keyCode == 13)
       userInput.value = "";
-      // userInput.blur();
     }
   }
 
