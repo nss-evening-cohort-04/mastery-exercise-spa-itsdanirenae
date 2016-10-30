@@ -1,0 +1,21 @@
+body {
+  background-color: lightgrey;
+}
+
+.border {
+    border: solid 2px;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    height: 150px;
+    max-height: 225px;
+}
+
+.on-click {
+  border: dotted 10px;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  height: 150px;
+  max-height: 225px;
+  background-color: lightblue;
+  word-wrap: break-word;
+}
